@@ -7,11 +7,13 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 
 export class HeaderComponent {
-@Output() featureSelected = new EventEmitter<string>();
+// code no longer needed with routes
+// use this code to decide which component to load by passing the click eventEmitter
+// @Output() featureSelected = new EventEmitter<string>();
 
-    onSelect(feature: string) {
-        this.featureSelected.emit(feature);
-    }
+//     onSelect(feature: string) {
+//         this.featureSelected.emit(feature);
+//     }
 
 }
 

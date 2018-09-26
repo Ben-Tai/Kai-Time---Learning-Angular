@@ -18,7 +18,7 @@ export class RecipeService {
         new Recipe(
           'Yummy burger',
           'Delicious burger that will make you fat',
-          'http://www.readersdigest.ca/wp-content/uploads/2015/11/gourmet-burger.jpg',
+          'https://www.kfc.co.nz/getattachment/e2121533-15c3-41b9-a624-e9de266f5a53/menu/burger-combos/hawaiian-burger/',
             [
              new Ingredient ('beef patties', 2),
              new Ingredient ('lettuce', 1),
@@ -29,5 +29,9 @@ export class RecipeService {
 
     getRecipes() {
         return this.recipes.slice();
+    }
+
+    getRecipe(idx: number) {
+        return this.recipes[idx];
     }
 }
